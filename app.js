@@ -7,8 +7,6 @@ app.use(bodyParser.json());
 
 app.post('/chat/completions', (req, res) => {
   const data = req.body;
-  console.info(req.headers)
-
   
   const options = {
     url: 'https://api.openai.com/v1/chat/completions',
